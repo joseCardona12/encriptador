@@ -1,0 +1,39 @@
+@import url(variables.css);
+
+.modal{
+    position: fixed;
+    inset: 0;
+    background-color: var(--background-color-six);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    pointer-events: none;
+    transition: opacity .8s;
+    opacity: 0;
+}
+
+.modal__show{
+    pointer-events: unset;
+    opacity: 1;
+}
+
+.content__modal{
+    background-color: var(--background-color-firts);
+    width: 30%;
+    max-width: 300px;
+    padding: 2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.content__modal p{
+    color: var(--textColor-second);
+    font-weight: bold;
+    font-size: 14px;
+
+}

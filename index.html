@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/encript.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Encriptador | joseCardona</title>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="header">
+            <div class="logo">
+                <h2>jose<span>Cardona</span></h2>
+            </div>
+        </header>
+        <main class="main">
+            <section class="content-left">
+                <article>
+                    <div class="content__input">
+                        <input class="input" id="input" type="text" placeholder="Ingrese el texto aqui">
+                    </div>
+                    <div class="content_info">
+                        <div class="alert">
+                            <img src="./assets/exclamation_icon_160163.png" alt="sigoExclamacion">
+                        </div>
+                        <div class="content__limit">
+                            <p>Solo letras minúsculas y sin acentos.</p>
+                        </div>
+                        <div class="content__btn">
+                            <button class="button righ" id="encriptar">Encriptar</button>
+                            <button class="button" id="desencriptar">Desencriptar</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="content-right">
+                <article>
+                    <div class="content__area">
+                        <textarea id="mostrar" class="Desencriptar" cols="30" rows="10" placeholder="Recibir texto" ></textarea>
+                    </div>
+
+                    <div class="content__btn">
+                        <button class="button" id="copiarBtn">Copiar texto</button>
+                    </div>
+                </article>
+            </section>
+
+            <section class="modal" id="modal">
+                <div id="closeModal" class="content__modal">
+                    <p id="modal__text"></p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="content__footer">
+                <p>Todos los derechos reservados para @joseCardona</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script_controller.js" type="module">
+
+    </script>
+</body>
+</html>
